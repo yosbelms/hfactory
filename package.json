@@ -1,0 +1,16 @@
+{
+    "author"      : "Yosbel Marin",
+    "name"        : "hfactory",
+    "version"     : "0.0.0",
+    "license"     : "MIT",
+    "description" : "Small library to creates DOM elements factories",
+    "repository"  : "https://github.com/yosbelms/hfactory.git",
+
+    "main"        : "hfactory.js",
+
+    "keywords": [
+         "virtualdom",
+         "factory",
+         "hfactory"
+    ]
+}

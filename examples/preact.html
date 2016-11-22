@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+</head>
+    <body>
+        <div id="app"></div>
+        <script type="text/javascript" src="../hfactory.js"></script>
+        <script type="text/javascript" src="https://npmcdn.com/preact@latest"></script>
+        <script type="text/javascript">
+            const {h, render} = preact
+            const {div, strong} = hfactory(h)
+
+            const HelloView = (name) =>
+                div({className: 'info'},
+                    strong({}, 'Hello ' + name))
+
+            render(HelloView('Preact!'), document.getElementById('app'))
+        </script>
+    </body>
+</html>

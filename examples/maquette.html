@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+</head>
+    <body>
+        <div id="app"></div>
+        <script type="text/javascript" src="../hfactory.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/maquette/2.4.1/maquette.min.js"></script>
+        <script type="text/javascript">
+            const {div, strong} = hfactory(maquette.h)
+            const projector = maquette.createProjector()
+
+            const HelloView = (name) => () =>
+                div({className: 'info'},
+                    strong('Hello ' + name))
+
+            projector.append(document.getElementById('app'), HelloView('Maquette!'))
+        </script>
+    </body>
+</html>
