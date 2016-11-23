@@ -45,7 +45,7 @@ const {div, strong} = hfactory(maquette.h)
 const projector = maquette.createProjector()
 
 const HelloView = (name) => () =>
-    div({className: 'info'},
+    div({class: 'info'},
         strong('Hello ' + name))
 
 projector.append(document.getElementById('app'), HelloView('Maquette!'))
