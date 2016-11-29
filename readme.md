@@ -38,7 +38,7 @@ const HelloView = (name) =>
 ReactDOM.render(HelloView('React!'), document.getElementById('app'))
 ```
 
-## Maquette Example
+## Maquette example
 
 ```js
 const {div, strong} = hfactory(maquette.h)
@@ -51,7 +51,7 @@ const HelloView = (name) => () =>
 projector.append(document.getElementById('app'), HelloView('Maquette!'))
 ```
 
-# More Examples
+# More examples
 
 https://github.com/yosbelms/hfactory/tree/master/examples
 
